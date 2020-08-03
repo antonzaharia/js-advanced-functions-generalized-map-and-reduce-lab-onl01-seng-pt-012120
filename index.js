@@ -13,7 +13,7 @@ const reduce = function(arr, fn, base=0) {
   if (base) {
       total = base;
   } else {
-      total = sourceArray[0]
+      total = arr[0];
       i++
   }
 }
