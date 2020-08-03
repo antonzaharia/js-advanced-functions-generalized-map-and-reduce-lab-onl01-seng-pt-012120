@@ -15,7 +15,6 @@ const reduce = function(arr, fn, base) {
       total = base;
   } else {
       total = arr[0];
-      i++
   }
 
   for (let element of arr ) {
