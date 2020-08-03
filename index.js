@@ -11,7 +11,7 @@ const reduce = function(arr, fn, base=0) {
   let value;
   let r;
   if (base) {
-      total = startPoint
+      total = base;
   } else {
       total = sourceArray[0]
       i++
