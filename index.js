@@ -8,8 +8,9 @@ const map = function(arr, fn) {
 }
 
 const reduce = function(arr, fn, base=0) {
-  let value;
-  let r;
+  let total
+  let i = 0
+
   if (base) {
       total = base;
   } else {
