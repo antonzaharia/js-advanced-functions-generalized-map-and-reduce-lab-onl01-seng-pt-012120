@@ -7,7 +7,7 @@ const map = function(arr, fn) {
   return r;
 }
 
-const reduce = function(arr, fn, base=0) {
+const reduce = function(arr, fn, base) {
   let total;
   let i = 0;
 
