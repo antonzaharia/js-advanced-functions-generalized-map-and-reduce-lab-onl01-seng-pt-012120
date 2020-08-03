@@ -10,8 +10,11 @@ const map = function(arr, fn) {
 const reduce = function(arr, fn, base=0) {
   let r;
   for( let element of arr ) {
-    if(Number.isInteger(element))
-    r = fn(element, base);
+    if(Number.isInteger(element)){
+      r += element;
+    }else{
+      r = fn(element, base)
+    }
   }
   return r;
 }
