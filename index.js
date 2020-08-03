@@ -18,8 +18,8 @@ function reduce(arr, fn, base) {
         i++
     }
 
-    for (let element of arr) {
-        total = fn(element, total)
+    for (i; i < arr.length; i++) {
+        total = fn(arr[i], total)
     }
     return total
 }
