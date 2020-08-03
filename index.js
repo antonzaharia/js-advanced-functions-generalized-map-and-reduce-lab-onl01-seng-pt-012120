@@ -18,8 +18,8 @@ function reduce(arr, fn, base) {
         i++
     }
 
-    for (i; i < sourceArray.length; i++) {
-        total = callbackFn(sourceArray[i], total)
+    for (i; i < arr.length; i++) {
+        total = fn(arr[i], total)
     }
     return total
 }
