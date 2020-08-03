@@ -7,6 +7,6 @@ const map = function(arr, fn) {
   return r;
 }
 
-const reduce = function(arr, fn, base) {
+const reduce = function(arr, fn, base=0) {
 
 }
