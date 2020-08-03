@@ -7,19 +7,19 @@ const map = function(arr, fn) {
   return r;
 }
 
-const reduce = function(arr, fn, base) {
-  let total;
-  let i = 0;
+function reduce(sourceArray, callbackFn, startPoint) {
+    let total
+    let i = 0
 
-  if (base) {
-      total = base;
-  } else {
-      total = arr[0];
-      i++
-  }
-
-  for (let element of arr ) {
-        total = fn(element, total)
+    if (startPoint) {
+        total = startPoint
+    } else {
+        total = sourceArray[0]
+        i++
     }
-    return total;
+
+    for (i; i < sourceArray.length; i++) {
+        total = callbackFn(sourceArray[i], total)
+    }
+    return total
 }
