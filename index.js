@@ -7,14 +7,14 @@ const map = function(arr, fn) {
   return r;
 }
 
-function reduce(sourceArray, callbackFn, startPoint) {
+function reduce(arr, fn, base) {
     let total
     let i = 0
 
-    if (startPoint) {
-        total = startPoint
+    if (base) {
+        total = base
     } else {
-        total = sourceArray[0]
+        total = arr[0]
         i++
     }
 
