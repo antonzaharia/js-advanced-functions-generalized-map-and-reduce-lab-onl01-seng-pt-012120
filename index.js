@@ -11,7 +11,7 @@ const reduce = function(arr, fn, base=0) {
   let r;
   for( let element of arr ) {
     if(Number.isInteger(element)){
-      r += element;
+      r += fn(element);
     }else{
       r = fn(element, base)
     }
