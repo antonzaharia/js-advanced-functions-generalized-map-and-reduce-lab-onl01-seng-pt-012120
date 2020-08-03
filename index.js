@@ -21,5 +21,5 @@ const reduce = function(arr, fn, base=0) {
   for (let element of arr ) {
         total = fn(element, total)
     }
-    return total
+    return total;
 }
