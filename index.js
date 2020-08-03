@@ -10,7 +10,7 @@ const map = function(arr, fn) {
 const reduce = function(arr, fn, base=0) {
   let r;
   for( let element of arr ) {
-    r += fn(element);
+    r = fn(element);
   }
   return r;
 }
