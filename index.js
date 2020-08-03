@@ -4,4 +4,5 @@ const map = function(arr, fn) {
   for( let element of arr ) {
     r.push(fn(element));
   }
+  return r;
 }
